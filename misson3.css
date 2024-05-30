@@ -1,0 +1,310 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 上面為CSS RESET *//**/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*,*::before,*::after {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color:#3b3b3b;
+  max-width:1920px;
+}
+a{
+  text-decoration:none;
+}
+.header-bg{
+  margin: 0 auto;
+  background: #ffffff;
+}
+.header-content{
+  display: flex;
+  padding: 32px 312px 32px 312px;
+}
+.header-img{
+  max-width: 90px;
+  height: 40px;
+  align-self: center;
+}
+.header-content ul{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-self: center;
+}
+.header-content li{
+  margin: 0px 32px 0px 0px;
+  line-height: 24px;
+}
+.header-content a{
+  padding: 4px 8px;
+  color:#000000;
+  font-weight: bold;
+}
+
+.title-bg{
+  display: block;
+  max-width: 100%;
+  background: #fafafa;
+  padding: 80px 0px 0px 0px;
+  margin-bottom: 118px;
+}
+.title1{
+  margin: 0 auto;
+  max-width:676px;
+  position: relative;
+  padding: 59px 0px;
+}
+.title1::before {
+  content: "";
+  width: 72px;
+  height: 72px;
+  background-image: url(./img/gridicons_quote.png);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.title1::after {
+  content: "";
+  width: 72px;
+  height: 72px;
+  background-image: url(./img/gridicons_quote2.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.title1 h4{
+  font-size: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  line-height: 1.2;
+  text-align: center;
+  color: #1e1e1e;
+}
+.space{
+  padding-bottom: 16px;
+}
+.line{
+  position: relative;
+}
+.line img{
+  position: absolute;
+  right: -15px;
+  bottom: 0px;
+}
+
+.title2{
+  display: flex;
+  margin: 0 auto;
+  max-width:636px;
+  margin-top: 24px;
+  padding-bottom: 80px;
+  justify-content: space-between;
+}
+.title2 li{
+  text-align: center;
+  width: 298px;
+}
+.title2 p{
+  color:#3b3b3b;
+  margin: 0px 0px;
+}
+h3{
+  color: #5b5b5b;
+  margin-bottom: 8px;
+}
+.line2{
+  border-bottom:2px solid #c1c1c1;
+}
+
+
+.content{
+  max-width:100%;
+  
+}
+.container{
+  max-width:1296px;
+  margin:0 auto;
+  padding: 120px 12px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 16px;
+}
+.card-group{
+  display:flex;
+  flex-wrap: wrap;
+  row-gap: 80px;
+  margin:-120px -12px;
+}
+.card{
+  width: 50%;
+  padding: 0 12px;
+}
+h1,p,.card ul{
+  margin-left:16px;
+
+}
+h1{
+  font-size:28px;
+  margin-top: 16px;
+  margin-bottom:4px;
+  font-weight: bold;
+}
+p{
+  color:#919191;
+  font-size:16px;
+  margin-bottom:24px;
+}
+.card ul{
+  display: flex;
+  gap:16px;
+  margin-bottom: 80px;
+}
+.card li{
+  padding: 4px 12px;
+  border-radius: 16px;
+  color:#F1F1F1;
+  background: gray;
+}
+.footer-bg{
+  background-image: url(./img/footer-lg.png);
+}
+.footer-content-bg{
+  display: flex;
+  justify-content: space-between;
+  max-width:1296px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.footer-content img{
+  padding-bottom: 24px;
+}
+.footer-content p{
+   margin: 0;
+   font-size: 20px;
+   color: #3b3b3b;
+   padding-bottom: 24px;
+}
+h5{
+  color:#919191;
+}
+.footer-icon ul{
+  height: 264px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-icon a{
+  display: block;
+  width: 306px;
+  font-size: 20px;
+  border-radius: 16px;
+  padding: 8px 24px;
+  color: #3b3b3b;
+  border: 1px solid #C1C1C1;
+  background-color: #FFFFFF;
+}
+
+@media(max-width: 992px){
+  /*header*/
+  .header-content ul{
+    display: none;
+  }
+
+  /*banner*/
+
+  .title1{
+    width: 300px;
+  }
+  .title2{
+    width: 300px;
+  }
+
+  /*main*/
+
+  .card{
+    width: 100%;
+  }
+  .card img{
+    width: 100%;
+  }
+  .container{
+    padding: 80px 12px;
+}
+  .card-group{
+    row-gap: 48px;
+    margin-bottom: 48px;
+}
+.card ul{
+  margin-bottom: 0px;
+}
+  /*footer*/
+
+  .footer-bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .footer-content-bg{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+  }
+
+}
+
+
